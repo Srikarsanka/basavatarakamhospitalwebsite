@@ -1,0 +1,137 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Browser</title>
+    <style>
+        #department-search {
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        #departmentSearchInput {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+
+        #departmentList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #departmentList li {
+            padding: 5px;
+            background-color: #f4f4f4;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #departmentList li:hover {
+            background-color: #ddd;
+        }
+
+        #doctor-list {
+            margin-top: 20px;
+        }
+
+        #doctorList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #doctorList li {
+            padding: 10px;
+            background-color: #f4f4f4;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #doctorList li:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="department-search">
+        <h2>Search for a Department</h2>
+        <input type="text" id="departmentSearchInput" onkeyup="searchDepartments()"
+            placeholder="Search for a department">
+
+        <ul id="departmentList">
+            <li onclick="showDoctors('Cardiology')">Cardiology</li>
+            <li onclick="showDoctors('Neurology')">Neurology</li>
+            <li onclick="showDoctors('Orthopedics')">Orthopedics</li>
+            <li onclick="showDoctors('Pediatrics')">Pediatrics</li>
+            <li onclick="showDoctors('Dermatology')">Dermatology</li>
+            <li onclick="showDoctors('Oncology')">Oncology</li>
+            <li onclick="showDoctors('Endocrinology')">Endocrinology</li>
+            <li onclick="showDoctors('Ophthalmology')">Ophthalmology</li>
+            <li onclick="showDoctors('Gastroenterology')">Gastroenterology</li>
+            <li onclick="showDoctors('Urology')">Urology</li>
+            <li onclick="showDoctors('Psychiatry')">Psychiatry</li>
+            <li onclick="showDoctors('Plastic Surgery')">Plastic Surgery</li>
+            <li onclick="showDoctors('ENT')">ENT</li>
+            <li onclick="showDoctors('Nephrology')">Nephrology</li>
+            <li onclick="showDoctors('Rheumatology')">Rheumatology</li>
+            <li onclick="showDoctors('General Medicine')">General Medicine</li>
+        </ul>
+    </section>
+
+    <!-- Doctor List Section -->
+    <section id="doctor-list" style="display:none;">
+        <h2>Doctors in <span id="selected-department">[Department Name]</span></h2>
+        <ul id="doctorList">
+            <!-- Doctor names will be populated here -->
+        </ul>
+    </section>
+
+    <script>const departmentDoctors = {
+            'Cardiology': ['Dr. Smith - Cardiologist', 'Dr. Johnson - Cardiologist', 'Dr. Brown - Cardiologist', 'Dr. Lee - Cardiologist'],
+            'Neurology': ['Dr. Taylor - Neurologist', 'Dr. Wilson - Neurologist', 'Dr. Davis - Neurologist', 'Dr. Clark - Neurologist'],
+            'Orthopedics': ['Dr. Adams - Orthopedist', 'Dr. Scott - Orthopedist', 'Dr. White - Orthopedist', 'Dr. King - Orthopedist'],
+            'Pediatrics': ['Dr. Allen - Pediatrician', 'Dr. Martin - Pediatrician', 'Dr. Young - Pediatrician', 'Dr. Harris - Pediatrician'],
+            'Dermatology': ['Dr. Walker - Dermatologist', 'Dr. Moore - Dermatologist', 'Dr. Perez - Dermatologist', 'Dr. Gonzalez - Dermatologist'],
+            // Add more departments and doctors as needed
+        };
+
+        function showDoctors(department) {
+            // Hide the department search section and show the doctor list section
+            document.getElementById('department-search').style.display = 'none';
+            document.getElementById('doctor-list').style.display = 'block';
+
+            // Update the selected department name in the header
+            document.getElementById('selected-department').textContent = department;
+
+            // Get the list of doctors for the selected department
+            const doctors = departmentDoctors[department];
+
+            // Get the doctor list container
+            const doctorList = document.getElementById('doctorList');
+            doctorList.innerHTML = ''; // Clear previous doctor list
+
+            // Populate the list with doctors
+            doctors.forEach(doctor => {
+                const li = document.createElement('li');
+                li.textContent = doctor;
+                li.onclick = function () {
+                    alert('Booking an appointment with ' + doctor);  // Placeholder for booking functionality
+                };
+                doctorList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+
+</html>

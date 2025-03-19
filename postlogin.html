@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basavatarakam Patient Portal</title>
+    <link rel="stylesheet" href="postlogin.css">
+    <link rel="icon" href="logo.jpeg" style="border-radius:2rem;">
+</head>
+
+<body>
+    <div id="main"
+        style="width:100%;height:50px;background-color:white;color:#0f346c;font-weight:100;font-size:2rem;font-family: 'Times New Roman', Times, serif;">
+        <center>
+            <h1>Welcome to Basavatarakam Patient Portal</h1>
+        </center>
+    </div>
+    <h2 id="na" style="margin-left:12%"></h2>
+    <div id="main-1">
+        <div id="m-1">
+            <h1>Please fill the details </h1>
+            <label for="dob">Date of Births:</label>
+            <br>
+            <input type="date" name="" id="dob" required>
+            <br>
+            <label for="gen">Gender:</label>
+            <br>
+            <input type="text" name="" id="" placeholder="Male or Female">
+            <br>
+            <label for="blod" required>BloodGroup</label>
+            <br>
+            <input type="text" name="" id="blood">
+            <br>
+            <label for="address">Address:</label>
+            <br>
+            <input type="text" name="" id="address" placeholder="plz enter your address for communication" required>
+        </div>
+    </div>
+    <script>
+        const welcome = document.getElementById("na");
+        var name = localStorage.getItem('firstName');
+
+        welcome.innerHTML = ` <h2 style="color:orange;display:inline-block;margin-left:0%"> <strong style="color:#0f346c">welcome</strong> ${name} !</h2>`;
+    </script>
+</body>
+
+</html>

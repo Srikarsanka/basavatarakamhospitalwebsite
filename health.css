@@ -1,0 +1,183 @@
+ul,li{
+    display:inline-block;
+    margin-left:4.5rem;
+    font-size: large;
+    padding-bottom: 0.5rem;
+}
+html,body{
+    overflow-x: hidden;
+}
+nav{
+    background-color:white;
+    color:0f346c;
+    max-height: 70px;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+li:hover {
+    border-bottom: 2px;
+    animation-name: line-grow;
+    animation-duration: 5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes line-grow {
+    0% {
+        border-bottom: 0.5px solid #0f346c;
+    }
+    100% {
+        background-size: 1.5px solid #0f346c;
+    }
+}
+#na:hover{
+    text-decoration-line: none;
+    animation: none;
+}
+#na
+{
+    margin-left: 0px;
+    left:0;
+}
+.active
+{
+    background-color:#0f346c;
+    color:white;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+/*main div first div*/
+#main
+{
+    width:100%;
+    height:150px;
+    color: #0f346c;
+    background-color:white;
+    margin-top: 2rem;
+    border-bottom:1px solid #0f346c;
+    h1{
+         margin-top:4rem ;
+         margin-left:25%;
+    }
+}
+.background-section {
+    background-color:white;
+}
+.main-heading {
+    color:#0f346c;
+    font-size:40px;
+}
+.box-container1 {
+    background-color:white;
+    width:100%;
+    height:300px;
+    background-image:url("https://www.medicoverhospitals.in/images/preventive/Master-Health-Checkup-Male.webp");
+    background-size:cover;
+    border-radius:24px;
+}
+.box-container2 {
+    background-color:white;
+    width:100%;
+    height:300px;
+    background-image:url("https://www.medicoverhospitals.in/images/preventive/master-health-checkup-female.webp");
+    background-size:cover;
+    border-radius:24px;
+}
+.box-container3 {
+    background-color:white;
+    width:100%;
+    height:300px;
+    background-image:url("https://www.medicoverhospitals.in/images/preventive/executive-health-checkup-male-medicover.webp");
+    background-size:cover;
+    border-radius:24px;
+}
+.box-container4 {
+    background-color:white;
+    width:100%;
+    height:300px;
+    background-image:url("https://www.medicoverhospitals.in/images/preventive/heart-package-with-ct-coronary-angiogram-medicover-hospitals.webp");
+    background-size:cover;
+    border-radius:24px;
+}
+.box-container5 {
+    background-color:white;
+    width:100%;
+    height:300px;
+    background-image:url("https://www.medicoverhospitals.in/images/preventive/cancer-screening-package-men-medicover-hospitals.webp");
+    background-size:cover;
+    border-radius:24px;
+}
+.box-container6 {
+    background-color:white;
+    width:100%;
+    height:300px;
+    background-image:url("https://www.medicoverhospitals.in/images/preventive/basic-health-checkup-package-medicover-hospitals.webp");
+    background-size:cover;
+    border-radius:24px;
+}
+.text-container {
+    background-color:#eeeee4;
+    border-radius:24px;
+    height:100px;
+    
+}
+.sub-heading {
+    font-size:16px;
+}
+.paragraph {
+    font-size:12px;
+}
+#footer
+{
+    width:100%;
+    height:300px;
+    background-color:#0F346C;
+    color:white;
+  
+    h1 {
+        font-size:1.5rem;
+        font-weight: 100;
+        font-style: inherit;
+      
+        position: relative;
+        
+    }
+    #div{
+        width:100%;
+        height:50px;
+        display: flex;
+        flex-wrap:wrap;
+        align-content: center;
+        margin-left:36%;
+        margin-top:2rem;
+        span {
+            width:50px;
+            height:60px;
+         
+            margin-left:3rem;
+            font-size:small;
+            font-weight:100;
+            img {
+                width:50px;
+                height:40px;
+            }
+        }
+    }
+    h3 {
+        font-size:large;
+        font-weight:100;
+        border-bottom:1px solid white;
+        padding-bottom:0.5rem;
+        display:inline-block;
+
+    }
+    p {
+        font-size:medim;
+        font-weight: 100;
+    }
+}

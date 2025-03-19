@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basavatarakam Patient Portal</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="icon" href="logo.jpeg" style="border-radius:2rem;">
+    <script src="//code.tidio.co/nqqbaos6saq2lcmwrpwsepgo4ple6nwk.js" async></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id='na'
+                style="font-size:x-large;left:0;font-size:2rem;text-transform: uppercase;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:300;color:#191970">
+                Basavatarakam</li>
+            <li id="ho1">Home</li>
+            <li id="book1" onclick="window.location.href='book.html'">Book Appointments</li>
+            <li id="tes" class="active">Lab Tests</li>
+            <li id="He">Health Checkups</li>
+            <li id="con1">Contact Us</li>
+            <li id="cart"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="black">
+                    <path
+                        d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                </svg></li>
+            <span id="cart-count" style=" display: inline-flex; align-items: center; justify-content: center; width:
+                20px; /* Set equal width & height */ height: 20px; border-radius: 50%; background-color: #191970; color:
+                white; font-size: 12px; font-weight: bold; position: relative; top: -20px;left:-5px">
+                0
+            </span>
+
+            <li id="pop">Profile</li>
+
+        </ul>
+    </nav>
+    <div id="head">
+        <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364983/testin2_vq6bnl.jpg" alt="" width="101%"
+            height="500px">
+        <h1>Book lab tests at home<br>simple and hassle-free</h1>
+        <div id="span">
+            <center>
+                <p> Home Visits From 9AM - 7PM</p>
+            </center>
+        </div>
+        <div id="cer">
+            <br>
+            <br>
+            <h3>Certified Excellence</h3>
+            <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364789/capcertified_ndfhab.png" alt="">
+            <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364911/iso_k8ggz2.png" alt=""
+                style="margin-left: 1rem;">
+            <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364801/CLIA-Logo-removebg-preview_pf5cbe.png"
+                alt="" style="margin-left:10rem;;margin-top: 2rem;">
+        </div>
+    </div>
+    <div id="main">
+        <center>
+            <h2>No more waiting in long queues to get a lab test done!</h2>
+            <p style="text-shadow: 1cap;">Basavatarakam Diagnostics offers an easy at-home sample collection facility
+                where you can book a lab test
+                online. One of our skilled phlebotomists will collect the sample from your residence while ensuring the
+                best hygiene practices. Get your test reports within 6 hours!
+
+            </p>
+        </center>
+        <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742365112/test2_lphgjq.gif" alt=""
+            style="width:100%;border-radius: 2rem;">
+        <br>
+
+
+        <div id="tests">
+            <br>
+            <br>
+
+            <h1>
+                Quick and Vital Blood Tests</h1>
+            <br>
+            <br>
+
+            <div id="tests-1">
+
+                <div class="te" id="te1">
+                    <div class="te-1">
+                        <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364796/cbc_gzt24q.webp" alt="">
+                        <div class="te-1-1">
+                            <p>CBC Test(Complete Blood Count)</p><a>30 Tests Included</a>
+                        </div>
+                    </div>
+                    <div class="te-2">
+                        <div class="te-2-1">
+                            <h3>₹478</h3>
+                            <del> (673)</del>
+                            <h5>25%</h5>
+                        </div>
+                        <div class="te-2-2">
+                            <button data-id="1" data-name="CBC Test (Complete Blood Count)"
+                                data-image="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364796/cbc_gzt24q.webp"
+                                data-price="478" data-original-price="673" data-discount="25"
+                                onclick="addToCart(this)">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="te">
+                    <div class="te-1">
+                        <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364807/Diabetes_tye3mx.webp"
+                            alt="">
+                        <div class="te-1-1">
+                            <p>HbA1c Test (Hemoglobin A1c)
+                            </p><a>3 Tests Included</a>
+                        </div>
+                    </div>
+                    <div class="te-2">
+                        <div class="te-2-1">
+                            <h3>₹763</h3>
+                            <del> (1017)</del>
+                            <h5>25%</h5>
+                        </div>
+                        <div class="te-2-2">
+                            <button data-id="2" data-name="HbA1c Test (Hemoglobin A1c)" data-image="Diabetes.webp"
+                                data-price="763" data-original-price="1017" data-discount="25"
+                                onclick="addToCart(this)">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="te">
+                    <div class="te-1">
+                        <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364807/Diabetes_tye3mx.webp"
+                            alt="">
+                        <div class="te-1-1">
+                            <p>FBS (Fasting Blood Sugar )Test
+                            </p><a>1 Tests Included</a>
+                        </div>
+                    </div>
+                    <div class="te-2">
+                        <div class="te-2-1">
+                            <h3>₹100</h3>
+                            <del> (133)</del>
+                            <h5>25%</h5>
+                        </div>
+                        <div class="te-2-2">
+                            <button data-id="3" data-name="FBS (Fasting Blood Sugar) Test"
+                                data-image="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364807/Diabetes_tye3mx.webp"
+                                data-price="100" data-original-price="133" data-discount="25"
+                                onclick="addToCart(this)">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="te">
+                    <div class="te-1">
+                        <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364886/Heart_m4yyav.webp"
+                            alt="">
+                        <div class="te-1-1">
+                            <p>Lipid Profile Test
+                            </p><a>8 Tests Included</a>
+                            <h6
+                                style="font-weight: 600;;color:maroon;margin: 0;margin-left: 1.3rem;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin-top: 0.3rem;text-transform: uppercase;">
+                                Essential Health Check</h6>
+                        </div>
+                    </div>
+                    <div class="te-2">
+                        <div class="te-2-1">
+                            <h3>₹1000</h3>
+                            <del> (1033)</del>
+                            <h5>25%</h5>
+                        </div>
+                        <div class="te-2-2">
+                            <button data-id="4" data-name="Lipid Profile Test"
+                                data-image="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364886/Heart_m4yyav.webp"
+                                data-price="1000" data-original-price="1033" data-discount="25"
+                                onclick="addToCart(this)">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="te">
+                    <div class="te-1">
+                        <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364924/Liver_jgoone.webp"
+                            alt="">
+                        <div class="te-1-1">
+                            <p>LFT(Liver Function Test)
+                            </p><a>11 Tests Included</a>
+                            <h6
+                                style="font-weight: 600;;color:maroon;margin: 0;margin-left: 1.3rem;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin-top: 0.3rem;text-transform: uppercase;">
+                                Recomended for LFT</h6>
+                        </div>
+                    </div>
+                    <div class="te-2">
+                        <div class="te-2-1">
+                            <h3>₹1000</h3>
+                            <del> (1033)</del>
+                            <h5>25%</h5>
+                        </div>
+                        <div class="te-2-2">
+                            <button data-id="5" data-name="LFT"
+                                data-image="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364924/Liver_jgoone.webp"
+                                data-price="1000" data-original-price="1033" data-discount="25"
+                                onclick="addToCart(this)">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="te">
+                    <div class="te-1">
+                        <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364915/Kidney_rimznp.webp"
+                            alt="">
+                        <div class="te-1-1">
+                            <p>Lipid Profile Test
+                            </p><a>17 Tests Included</a>
+                            <h6
+                                style="font-weight: 600;;color:maroon;margin: 0;margin-left: 1.3rem;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin-top: 0.3rem;text-transform: uppercase;">
+                                Complete Kidney Profile</h6>
+
+                        </div>
+                    </div>
+                    <div class="te-2">
+                        <div class="te-2-1">
+                            <h3>₹388</h3>
+                            <del> (517)</del>
+                            <h5>25%</h5>
+                        </div>
+                        <div class="te-2-2">
+                            <button data-id="6" data-name="complete kidney profile"
+                                data-image="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364915/Kidney_rimznp.webp"
+                                data-price="388" data-original-price="517" data-discount="25"
+                                onclick="addToCart(this)">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="te">
+                    <div class="te-1">
+                        <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364801/Default_oqkswb.webp"
+                            alt="">
+                        <div class="te-1-1">
+                            <p>Glucose Fasting & PP Test
+                            </p><a>2 Tests Included</a>
+
+
+                        </div>
+                    </div>
+                    <div class="te-2">
+                        <div class="te-2-1">
+                            <h3>₹194</h3>
+                            <del> (258)</del>
+                            <h5>25%</h5>
+                        </div>
+                        <div class="te-2-2">
+                            <button data-id="7" data-name="Glucose Fasting && PP" data-image="Thyroid.webp"
+                                data-price="194" data-original-price="258" data-discount="25"
+                                onclick="addToCart(this)">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="te">
+                    <div class="te-1">
+                        <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364978/Thyroid_msdhpj.webp"
+                            alt="">
+                        <div class="te-1-1">
+                            <p>Thyroid Profile (T3 T4 TSH) Test
+                            </p><a>4 Tests Included</a>
+
+
+                        </div>
+                    </div>
+                    <div class="te-2">
+                        <div class="te-2-1">
+                            <h3>₹755</h3>
+                            <del> (1033)</del>
+                            <h5>25%</h5>
+                        </div>
+                        <div class="te-2-2">
+                            <button data-id="8" data-name="Thyroid Function Test"
+                                data-image="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364978/Thyroid_msdhpj.webp"
+                                data-price="550" data-original-price="750" data-discount="25"
+                                onclick="addToCart(this)">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="tests-2">
+            <br>
+            <h3
+                style="top:20rem;margin-left:2.5rem;color:white;font-size:2rem;font-weight:300;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                Book a Lab Test<br>With Us!</h3>
+            <div style="margin-left: 4rem;display: flex;"><svg xmlns="http://www.w3.org/2000/svg" height="78px"
+                    viewBox="0 -960 960 960" width="78px" fill="wheat">
+                    <path
+                        d="m705-102 66-67-116-116-67 66q-25 24.52-24.5 58.76Q564-126 588-102q24.24 24 58.12 24.5Q680-77 705-102Zm80-82 68-66q24-24 23.5-58T852-367q-24.8-23-58.18-23.5Q760.44-391 736-367l-66 68 115 115Zm-66 98q-31 31-73.5 30.5T572-86q-30-31-30.5-73.5T572-233l149-149q30-30 73.5-30t73.5 30q31 31 31 73.5T868-235L719-86ZM194-194v-572 572Zm32 22q-21.75 0-37.87-16.13Q172-204.25 172-226v-508q0-21.75 16.13-37.88Q204.25-788 226-788h205q-13-28 3-54t46-26q31 0 47 26t2 54h205q21.75 0 37.88 16.12Q788-755.75 788-734v208q-5 0-11 1t-11 1v-210q0-14-9-23t-23-9H226q-14 0-23 9t-9 23v508q0 14 9 23t23 9h205q0 5-1 11t-1 11H226Zm253.79-610q12.79 0 22.5-9t9.71-22.5q0-13.5-9.71-22.5t-22.5-9Q467-845 458-836t-9 22.5q0 13.5 9 22.5t21.79 9ZM306-620v-22h348v22H306Zm0 151v-22h348v15q-3.13 3.22-6.07 6.11Q645-467 641-464l5-5H306Zm0 151v-22h211l3-2q-6 6-12.5 12t-12.07 12H306Z" />
+                </svg>
+                <h2
+                    style="font-size:larger;font-weight: 200;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color:white;margin:0;margin-top:0.5rem">
+                    98%</h2>
+                <h4
+                    style="font-size: medium;font-weight: 200;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color:wheat;margin: 0;margin-top: 2rem;margin-left:-2rem">
+                    On-Time Delivery Report
+                </h4>
+            </div>
+            <div style="margin-left:4rem;display: flex"><svg xmlns="http://www.w3.org/2000/svg" height="78px"
+                    viewBox="0 -960 960 960" width="78px" fill="wheat">
+                    <path
+                        d="M146-172q-21.75 0-37.87-16.13Q92-204.25 92-226v-148q0-21.75 16.13-37.88Q124.25-428 146-428h26v-190h-10q-13 2-21.5-5.9-8.5-7.89-8.5-20.1v-66q0-9.75 7.13-16.88Q146.25-734 156-734h208q9.75 0 16.88 7.12Q388-719.75 388-710v66q0 12.21-8.5 20.1Q371-616 358-618h-10v190h264v-190h-10q-13 2-21.5-5.9-8.5-7.89-8.5-20.1v-66q0-9.75 7.13-16.88Q586.25-734 596-734h208q9.75 0 16.88 7.12Q828-719.75 828-710v66q0 12.21-8.5 20.1Q811-616 798-618h-10v190h26q21.75 0 37.88 16.12Q868-395.75 868-374v148q0 21.75-16.12 37.87Q835.75-172 814-172H146Zm448-470h212v-70H594v70Zm-440 0h212v-70H154v70Zm480 214h132v-192H634v192Zm-440 0h132v-192H194v192Zm-48 234h668q14 0 23-9t9-23v-148q0-14-9-23t-23-9H146q-14 0-23 9t-9 23v148q0 14 9 23t23 9Zm8-448v-70 70Zm440 0v-70 70ZM114-194v-212 212Z" />
+                </svg>
+                <h2
+                    style="font-size:larger;font-weight: 200;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color:white;margin:0;margin-top:0.5rem">
+                    97%</h2>
+                <h4
+                    style="font-size: medium;font-weight: 200;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color:wheat;margin: 0;margin-top: 2rem;margin-left:-2rem">
+                    Timely Sample collection
+                </h4>
+            </div>
+            <div style="margin-left: 4rem;display: flex">
+                <svg xmlns="http://www.w3.org/2000/svg" height="78px" viewBox="0 -960 960 960" width="78px"
+                    fill="wheat">
+                    <path
+                        d="m386-420 94-57 94 57-25-107 83-71-109-10-43-100-43 100-109 10 83 71-25 107ZM132-180v-594q0-22.78 15.61-38.39Q163.23-828 186-828h588q22.78 0 38.39 15.61T828-774v428q0 22.77-15.61 38.39Q796.78-292 774-292H244L132-180Zm102-134h540q12 0 22-10t10-22v-428q0-12-10-22t-22-10H186q-12 0-22 10t-10 22v542l80-82Zm-80 0v-492 492Z" />
+                </svg>
+                <h2
+                    style="font-size:larger;font-weight: 200;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color:white;margin:0;margin-top:0.5rem">
+                    99%</h2>
+                <h4
+                    style="font-size: medium;font-weight: 200;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color:wheat;margin: 0;margin-top: 2rem;margin-left:-2rem">
+                    Positive Costumer Feedback
+                </h4>
+            </div>
+            <div style="margin-left: 4rem;display: flex"><svg xmlns="http://www.w3.org/2000/svg" height="78px"
+                    viewBox="0 -960 960 960" width="78px" fill="wheat">
+                    <path
+                        d="M282-268v-350h22v350h-22Zm188 0v-350h22v350h-22ZM160-692v-12l320-158 320 158v12H160Zm71-22h499L480-837 231-714Zm-71 542v-22h438q0 6 1 11t2 11H160Zm496-200v-246h22v235l-22 11ZM800-40q-56-14-92-63.5T672-214v-82l128-64 128 64v82q0 61-36 110.5T800-40Zm-27-102 117-117-15-16-102 102-45-45-15 15 60 61ZM231-714h499-499Z" />
+                </svg>
+                <h2
+                    style="font-size:larger;font-weight: 200;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color:white;margin:0;margin-top:0.5rem">
+                    Acko </h2>
+                <h4
+                    style="font-size: medium;font-weight: 200;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color:wheat;margin: 0;margin-top: 2rem;margin-left:-2rem">
+                    CAP Certified & ISO 9001:2015
+                </h4>
+            </div>
+
+
+        </div>
+        <div id="whytes">
+
+            <div id="t-1">
+                <h2>Why Choose At-Home Testing?</h2>
+                <p><strong style="color:maroon;font-weight: 400;">Convenience at Your Doorstep:</strong> No need to
+                    travel to the
+                    lab schedule a test from the
+                    comfort of your
+                    home.
+                    <br>
+                    <strong style="color:maroon;font-weight: 400;"> Saves Time:</strong> Skip the long queues and
+                    waiting times, ensuring a seamless
+                    experience.
+                    <br>
+                    <strong style="color:maroon;font-weight: 400;">Safe and Hassle-Free:</strong> Reduce exposure to
+                    crowded places and ensure a safer testing
+                    process.
+                    <br>
+                    <strong style="color:maroon;font-weight: 400;">Personalized Care:</strong> Professional sample
+                    collectors come to you with precision and
+                    care.
+                    <br>
+                    <strong style="color:maroon;font-weight: 400;">Timely Results:</strong> Get quick and accurate
+                    reports delivered directly to your email or
+                    patient portal.
+                    <br>
+                    <strong style="color:maroon;font-weight: 400;">Ideal for All:</strong> Perfect for seniors, busy
+                    professionals, or anyone with mobility
+                    challenges.
+                </p>
+            </div>
+            <div id="t-2">
+                <img src="hometesting.svg" alt="" style="margin-top:10rem">
+            </div>
+        </div>
+    </div>
+    <div id="test-3">
+        <h1>Antigen-Rapid Tests</h1>
+        <div id="test-3-1">
+            <div class="test-3-1-1">
+                <div class="test3-1">
+                    <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364795/Blood_Studies_wr107q.webp"
+                        alt="">
+                    <div class="test3-1-1">
+                        <p>Dengue Rapid Test</p>
+                        <a href="">1 Test Included</a>
+                        <h6
+                            style="font-weight: 600;;color:maroon;margin: 0;margin-left: 1.3rem;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin-top: 0.3rem;text-transform: uppercase;">
+                            Highly Recomended </h6>
+                    </div>
+                </div>
+                <div class="test3-2">
+                    <div class="test3-2-1">
+                        <h3>₹1280</h3>
+                        <del> (1728)</del>
+                        <h5>25%</h5>
+                    </div>
+                    <div class="test3-2-2">
+                        <button data-id="9" data-name="Dengue Rapid Test"
+                            data-image="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364795/Blood_Studies_wr107q.webp"
+                            data-price="1280" data-original-price="673" data-discount="25"
+                            onclick="addToCart()">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="test-3-1-1">
+                <div class="test3-1">
+                    <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364795/Blood_Studies_wr107q.webp"
+                        alt="">
+                    <div class="test3-1-1">
+                        <p>HIV Test</p>
+                        <a href="">1 Test Included</a>
+                    </div>
+
+                </div>
+                <div class="test3-2">
+                    <div class="test3-2-1">
+                        <h3>₹963</h3>
+                        <del> (1150)</del>
+                        <h5>25%</h5>
+                    </div>
+                    <div class="test3-2-2">
+                        <button data-id="10" data-name="HIV Rapid Test"
+                            data-image="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364795/Blood_Studies_wr107q.webp"
+                            data-price="963" data-original-price="673" data-discount="25"
+                            onclick="addToCart()">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="test-3-1-1">
+                <div class="test3-1">
+                    <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364795/Blood_Studies_wr107q.webp"
+                        alt="">
+                    <div class="test3-1-1">
+                        <p>HBsAg Test (Hepatitis B surface antigen)</p>
+                        <a href="">1 Test Included</a>
+                    </div>
+
+                </div>
+                <div class="test3-2">
+
+
+
+                    <div class="test3-2-1">
+                        <h3>₹975</h3>
+                        <del> (1300)</del>
+                        <h5>25%</h5>
+                    </div>
+                    <div class="test3-2-2">
+                        <button data-id="11" data-name="HBsAg Test"
+                            data-image="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364795/Blood_Studies_wr107q.webp"
+                            data-price="975" data-original-price="673" data-discount="25"
+                            onclick="addToCart()">Add</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="test-3-1-1">
+                <div class="test3-1">
+                    <img src="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364795/Blood_Studies_wr107q.webp"
+                        alt="">
+                    <div class="test3-1-1">
+                        <p>Widal Test</p>
+                        <a href="">4 Test Included</a>
+                        <h6
+                            style="font-weight: 600;;color:maroon;margin: 0;margin-left: 1.3rem;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin-top: 0.3rem;text-transform: uppercase;">
+                            Recomended for Typhoid</h6>
+
+                    </div>
+
+                </div>
+                <div class="test3-2">
+                    <div class="test3-2-1">
+                        <h3>₹399</h3>
+                        <del> (532)</del>
+                        <h5>25%</h5>
+                    </div>
+                    <div class="test3-2-2">
+                        <button data-id="12" data-name="CBC Test (Complete Blood Count)"
+                            data-image="https://res.cloudinary.com/dnevq4wek/image/upload/v1742364795/Blood_Studies_wr107q.webp"
+                            data-price="399" data-original-price="673" data-discount="25"
+                            onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="testnomials">
+        <div id="test-01">
+            <br>
+            <br>
+
+            <h4>Uncompromised Quality. Reliable Results. Always.</h4>
+
+            <p>Spending hours in a queue at a diagnostic lab or a hospital is now a thing of the past. With
+                Basavatarakam you
+                can get your lab tests done from the comfort of your home. Our highly qualified phlebotomist will
+                collect the samples at your preferred time. Watch this video to see steps taken by us to ensure quality
+                and hygiene in sample collection. Book your next lab test with Tata 1mg at the lowest price guaranteed!
+            </p>
+            <h3>"We are proud to collaborate with TATA 1MG Labs, ensuring world-class healthcare and diagnostics for our
+                patients."</h3>
+        </div>
+        <div id="test-02">
+
+            <video autoplay loop muted>
+                <source
+                    src="Tata 1mg Labs Inside Tour_ Take a sneak peek of our world-class National Reference Lab, Delhi.mp4"
+                    type="video/mp4" style="margin:auto">
+        </div>
+
+    </div>
+    <div i="divlast"></div>
+    <center>
+        <h1
+            style="color:brown;font-weight: 300;text-transform: uppercase;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            Our Promise to You</h1><br>
+    </center>
+    <div style="display:flex;margin-left: 34.5rem;">
+        <div class="div"><img src="ui_revamp_secure_payment_widget.svg" alt="">
+            <p>Secure Payment</p>
+        </div>
+        <div class="div"><img src="trusted.svg" alt="">
+            <p style="margin:0;position: relative;left:3rem;top:10px;width:130px"> Trusted by 8 Crore Indians</p>
+        </div>
+        <div class="div"><img src="genuine.svg" alt="" style="margin-left: 4.5rem;">
+            <p style="left:4.5rem">
+
+                Genuine Products</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--it is for the content by clicking the breif about the blood-->
+
+
+    <footer>
+        <div id="foot">
+            <div id="foot-1">
+                <h2>Basavatarakam Diagnostics</h2>
+                <p>Basavatarakam Diagnostics is a leading diagnostic center in Vijaywada, offering a wide range of
+                    lab tests
+                    conducted by certified professionals. Our home sample collection service ensures that you get
+                    accurate
+                    results without stepping out of your home. Book a lab test online and get your reports delivered
+                    within
+                    6 hours!</p>
+            </div>
+            <div id="foot-2">
+                <h2>Quick Links</h2>
+                <br>
+                <ul>
+                    <li>Home</li>
+                    <li>Book Appointments</li>
+                    <li>Lab Tests</li>
+                    <li>Health Checkups</li>
+                    <li>Contact Us</li>
+
+                </ul>
+            </div>
+            <div id="foot-3">
+                <h2>Contact Us</h2>
+                <p>Basavatarakam Diagnostics<br>Vijaywada, AndhraPradesh<br>Phone:
+                    040-12345678<br>Email:basakatarakamdiagnosis@gmail.com</p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <center>
+                <br><!--first change-->
+                <h1 style="color:white;margin-left:-2rem;">FOLLOW US ON</h1>
+                <div id="div">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="white" height="30px"
+                            width="50px"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                        </svg>Youtube</span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white" height="30px"
+                            width="50px">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>Instagram</span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" height="30px"
+                            width="50px">
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>Twitter</span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" fill="white" height="30px"
+                            width="50px">
+                            <path
+                                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+                        </svg>Google</span>
+                </div>
+
+        </div>
+        <p id="change">Login</p>
+        <button id="btn">change</button>
+
+        <script src="test.js"></script>
+
+
+
+</body>
+
+</html>
