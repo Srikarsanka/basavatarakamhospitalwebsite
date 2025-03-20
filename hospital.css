@@ -3,6 +3,7 @@ ul,li{
     margin-left:3.8rem;
     font-size: large;
     padding-bottom: 0.5rem;
+    cursor: pointer;
 }
 html, body {
     width: 100%;
@@ -10,6 +11,7 @@ html, body {
     padding: 0; /* Remove default padding */
     overflow-x: hidden; /* Prevent horizontal overflow */
     background-color: white;
+
    
 }
 nav{

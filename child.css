@@ -6,6 +6,7 @@ html, body {
 }
 ul,li{
     display:inline-block;
+    cursor: pointer;
     margin-left:3.8rem;
     font-size: large;
     padding-bottom: 0.5rem;

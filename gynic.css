@@ -2,6 +2,7 @@ ul,li{
     display:inline-block;
     margin-left:3.8rem;
     font-size: large;
+    cursor: pointer;
     padding-bottom: 0.5rem;
 }
 html,body{

@@ -153,49 +153,49 @@ const productdetails = [
         name: 'CBC (Complete Blood Count) Test',
         details: "A CBC test measures key blood components to assess overall health and detect conditions like anemia, infections, and blood disorders Includes .<br>🔴 RBC Tests – Hemoglobin, Hematocrit, RBC Count, MCV, MCH, MCHC, RDW <br> ⚪ WBC Tests – Total WBC, Neutrophils, Lymphocytes, Monocytes, Eosinophils, <br>Basophils.<br> 🩸 Platelet Tests – Platelet Count, MPV, PDW, PCT, IPF.<br> 🔬 Others – nRBC, Immature Granulocytes, Large Unstained Cells.",
         Requirements: "No fasting required. Blood sample is drawn from a vein. Results help diagnose various health conditions.",
-        img: "cbc.webp"
+        img: "https://res.cloudinary.com/dnevq4wek/image/upload/v1742364796/cbc_gzt24q.webp"
     },
     {
         id: 2,
         name: 'HbA1c Test (Hemoglobin A1c)',
         details: "Includes:<br>1️⃣ HbA1c (%) – Average blood sugar control.<br> 2️⃣ Estimated Average Glucose (eAG) – Converts HbA1c to an estimated glucose level.<br> 3️⃣ Blood Glucose Level – Checks current sugar levels.",
         Requirements: "No fasting required. Blood sample is drawn from a vein. Results help diagnose diabetes and monitor blood sugar control.",
-        img: "Diabetes.webp"
+        img: "https://res.cloudinary.com/dnevq4wek/image/upload/v1742364807/Diabetes_tye3mx.webp"
     },
     {
         id: 3,
         name: 'FBS (Fasting Blood Sugar) Test',
         details: "Includes:<br>1️⃣ Fasting Blood Sugar (FBS) – Blood sugar levels after fasting for 8-12 hours.",
         Requirements: "Fasting for 8-12 hours before the test. Blood sample is drawn from a vein. Results help diagnose diabetes and monitor blood sugar levels.",
-        img: "Diabetes (1).webp"
+        img: "https://res.cloudinary.com/dnevq4wek/image/upload/v1742364807/Diabetes_tye3mx.webp"
     },
     {
         id: 4,
         name: 'Lipid Profile Test (Heart)',
         details: "Includes:<br>1️⃣ Total Cholesterol – Total cholesterol levels.<br> 2️⃣ HDL Cholesterol – Good cholesterol levels.<br> 3️⃣ LDL Cholesterol – Bad cholesterol levels. <br>4️⃣ Triglycerides – Fatty substances in the blood.",
         Requirements: "Fasting for 9-12 hours before the test. Blood sample is drawn from a vein. Results help diagnose heart diseases and monitor cholesterol levels.",
-        img: "Heart.webp"
+        img: "https://res.cloudinary.com/dnevq4wek/image/upload/v1742364886/Heart_m4yyav.webp"
     },
     {
         id: 5,
         name: 'LFT (Liver Function Test)',
         details: "Includes:<br>1️⃣ Total Protein – Total protein levels.<br> 2️⃣ Albumin – Albumin levels. <br>3️⃣ Globulin – Globulin levels.<br> <br>4️⃣ A/G Ratio – Albumin to Globulin ratio.<br> 5️⃣ Bilirubin – Bilirubin levels.<br> 6️⃣ SGOT (AST) – Liver enzyme levels.<br> 7️⃣ SGPT (ALT) – Liver enzyme levels.<br> 8️⃣ Alkaline Phosphatase – Liver enzyme levels.",
         Requirements: "No fasting required. Blood sample is drawn from a vein. Results help diagnose liver diseases and monitor liver function.",
-        img: "Liver.webp"
+        img: "https://res.cloudinary.com/dnevq4wek/image/upload/v1742364924/Liver_jgoone.webp"
     },
     {
         id: 6,
         name: 'Lipid Profile Test (Kidney)',
         details: "Includes:<br>1️⃣ Urea – Urea levels.<br> 2️⃣ Creatinine – Creatinine levels.<br> 3️⃣ Uric Acid – Uric acid levels.<br> 4️⃣ BUN – Blood Urea Nitrogen.<br> 5️⃣ eGFR – Estimated Glomerular Filtration Rate.<br> 6️⃣ Sodium – Sodium levels.<br> 7️⃣ Potassium – Potassium levels.<br> 8️⃣ Chloride – Chloride levels.<br> 9️⃣ Calcium – Calcium levels.<br> 1️⃣0️⃣ Phosphorus – Phosphorus levels.<br> 1️⃣1️⃣ Albumin – Albumin levels.<br> 1️⃣2️⃣ Total Protein – Total protein levels.",
         Requirements: "No fasting required. Blood sample is drawn from a vein. Results help diagnose kidney diseases and monitor kidney function.",
-        img: "Kidney.webp"
+        img: "https://res.cloudinary.com/dnevq4wek/image/upload/v1742364915/Kidney_rimznp.webp"
     },
     {
         id: 7,
         name: 'Glucose Fasting & PP Test',
         details: "This test measures blood sugar levels before and after a meal to diagnose diabetes and glucose metabolism disorders. Includes (2 Tests):<br> 1️⃣ Fasting Blood Sugar (FBS) – Measures glucose after 8-12 hours of fasting.<br> 2️⃣ Postprandial Blood Sugar (PPBS) – Measures glucose 2 hours after a meal.",
         Requirements: "Fasting required for FBS. Blood samples are taken twice (before and after a meal).",
-        img: "Default.webp"
+        img: "https://res.cloudinary.com/dnevq4wek/image/upload/v1742364801/Default_oqkswb.webp"
     },
     {
         id: 8,
@@ -278,7 +278,7 @@ const productdetails1 = [
         name: 'Dengue Rapid Test',
         details: "The Dengue Rapid Test detects dengue virus antigens in the blood, helping diagnose dengue fever quickly.",
         Requirements: "No fasting required. A blood sample is taken from a vein.",
-        img: 'cbc.webp', 
+        img: 'https://res.cloudinary.com/dnevq4wek/image/upload/v1742364796/cbc_gzt24q.webp', 
         price: 1280,
         originalPrice: 1728,
         discount: 25
@@ -288,7 +288,7 @@ const productdetails1 = [
         name: 'HIV Test',
         details: "The HIV test detects antibodies or antigens in the blood to check for HIV infection.",
         Requirements: "No fasting required. A blood sample is taken from a vein.",
-        img: 'cbc.webp', 
+        img: 'https://res.cloudinary.com/dnevq4wek/image/upload/v1742364796/cbc_gzt24q.webp', 
         price: 963,
         originalPrice: 1150,
         discount: 25
@@ -298,7 +298,7 @@ const productdetails1 = [
         name: 'HBsAg Test (Hepatitis B Surface Antigen)',
         details: "The HBsAg test detects the presence of the hepatitis B virus in the blood, helping diagnose hepatitis B infection.",
         Requirements: "No fasting required. A blood sample is taken from a vein.",
-        img: 'cbc.webp', 
+        img: 'https://res.cloudinary.com/dnevq4wek/image/upload/v1742364796/cbc_gzt24q.webp', 
         price: 975,
         originalPrice: 1300,
         discount: 25
@@ -308,7 +308,7 @@ const productdetails1 = [
         name: 'Widal Test',
         details: "The Widal test is used to diagnose typhoid fever by detecting antibodies against Salmonella bacteria.",
         Requirements: "No fasting required. A blood sample is taken from a vein.",
-        img: 'cbc.webp', 
+        img: 'https://res.cloudinary.com/dnevq4wek/image/upload/v1742364796/cbc_gzt24q.webp', 
         price: 399,
         originalPrice: 532,
         discount: 25
