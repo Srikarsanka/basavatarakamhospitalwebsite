@@ -8,7 +8,7 @@ function child()
 function women()
 {
   window.location.href='gynic.html';
-  alert("redirect to the gynic pa")
+  
 }
 wo.addEventListener("click", () => {
     wo.style.backgroundColor='orange';
@@ -59,7 +59,7 @@ const ho = document.getElementById('ho');
 {
   ho.addEventListener("click",()=>
   {
-    window.location='main.html';
+    window.location='index.html';
   })
 };
 const book = document.getElementById('pat');

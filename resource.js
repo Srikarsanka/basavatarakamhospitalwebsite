@@ -7,7 +7,7 @@ const ho = document.getElementById('ho');
 {
   ho.addEventListener("click",()=>
   {
-    window.location='main.html';
+    window.location='index.html';
   })
 };
 const book = document.getElementById('pat');
