@@ -1,6 +1,6 @@
 ul,li{
     display:inline-block;
-    margin-left:4.5rem;
+    margin-left:3.8rem;
     font-size: large;
     padding-bottom: 0.5rem;
 }
@@ -9,6 +9,8 @@ nav{
     color:0f346c;
     max-height: 70px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
     z-index: 1000;
     width: 100%;
     border: 1px solid black;

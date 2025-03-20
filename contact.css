@@ -1,6 +1,6 @@
 ul,li{
     display:inline-block;
-    margin-left:4.5rem;
+    margin-left:3.8rem;
     font-size: large;
     padding-bottom: 0.5rem;
 }
@@ -17,6 +17,8 @@ nav{
     border: 1px solid black;
     border-top: none;
     border-left: none;
+    display: flex;
+    justify-content: space-between;
     border-right: none;
 }
 li:hover {

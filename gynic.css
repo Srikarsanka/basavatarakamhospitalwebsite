@@ -1,6 +1,6 @@
 ul,li{
     display:inline-block;
-    margin-left:4.5rem;
+    margin-left:3.8rem;
     font-size: large;
     padding-bottom: 0.5rem;
 }
@@ -10,6 +10,8 @@ html,body{
 nav{
     background-color:white;
     color:0f346c;
+    display: flex;
+    justify-content: space-between;
     max-height: 70px;
     z-index: 1000;
     width: 100%;

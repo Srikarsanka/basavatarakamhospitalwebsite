@@ -1,7 +1,7 @@
 ul,
 li {
     display: inline-block;
-    margin-left: 4.5rem;
+    margin-left:3.8rem;
     font-size: large;
     padding-bottom: 0.5rem;
 }
@@ -22,7 +22,8 @@ nav {
     background-color: white;
     color: 0f346c;
     max-height: 70px;
-  
+    display: flex;
+    justify-content: space-between;
     z-index: 90;
     width: 100%;
     border: 1px solid black;

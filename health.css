@@ -1,6 +1,6 @@
 ul,li{
     display:inline-block;
-    margin-left:4.5rem;
+    margin-left:3.8rem;
     font-size: large;
     padding-bottom: 0.5rem;
 }
@@ -13,6 +13,8 @@ nav{
     max-height: 70px;
     position: relative;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     border: 1px solid black;
     border-top: none;
