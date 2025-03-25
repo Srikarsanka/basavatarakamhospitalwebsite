@@ -3,6 +3,70 @@ home.addEventListener('click',()=>
 {
     window.location.href='pmain.html';
 });
+const name = localStorage.getItem('firstName') || 'User';
+const dob = localStorage.getItem('dob') || 'N/A';
+const email = localStorage.getItem('userEmail') || 'N/A';
+const gender = localStorage.getItem('gender') || 'N/A';
+
+// Check if data is available
+console.log("User Profile Data:", { name, dob, email, gender });
+const profile = document.getElementById('pop')
+// Function to create and display the profile modal
+profile.addEventListener('click', () => {
+    // Remove existing profile modal if it exists
+    const existingModal = document.getElementById('profileModal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Decide the profile image based on gender
+    let profileImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJd42JdHzWNXP6VQQbiNZ3VrzHtDmvYMYQEVEriEi7kCw5Uz06QQtyfQeNoHItvNO0mKQ&usqp=CAU"; // Default image
+    if (gender.toLowerCase() === 'm') {
+        profileImage = "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"; // Male image
+    } else if (gender.toLowerCase() === 'f') {
+        profileImage = "https://cdn-icons-png.flaticon.com/512/2922/2922561.png"; // Female image
+    }
+
+    // Create the profile modal
+    const div = document.createElement('div');
+    div.id = 'profileModal';
+    div.style.width = '25%';
+    div.style.height = '100%';
+    div.style.backgroundColor = 'white';
+    div.style.color = '#0f346c';
+    div.style.position = 'fixed';
+    div.style.top = '0px';
+    div.style.overflowY = 'scroll';
+    div.style.right = '0';
+    div.style.zIndex = '90000';
+    div.style.border = '1px solid #ddd';
+    div.style.boxShadow = '0px 4px 6px rgba(0, 0, 0, 0.1)';
+    div.style.borderRadius = '8px';
+    div.style.padding = '10px';
+
+    // Add user information to the modal
+    div.innerHTML = `
+        <h2 style="text-align: center; margin-bottom: 20px;">User Information</h2>
+        <div style="text-align: center; padding: 20px;">
+            <img src="${profileImage}" alt="Profile Image" 
+                 style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #0f346c;">
+        </div>
+        <h2 style='font-size:1.5rem;font-weight:100;margin-left:10%'><strong style='font-weight:800'>Name:</strong> ${name}</h2>
+        <h2 style='font-size:1.5rem;font-weight:100;margin-left:10%'><strong style='font-weight:800'>Date of Birth:</strong> ${dob}</h2>
+        <h2 style='font-size:1.5rem;font-weight:100;margin-left:10%'><strong style='font-weight:800'>Gender:</strong> ${gender}</h2>
+        <h2 style='font-size:1.5rem;font-weight:100;margin-left:10%'><strong style='font-weight:800;font-size:1.7rem'>Email:</strong> ${email}</h2>
+        <button id="closeProfile" style="display: block; margin: 20px auto; padding: 10px 20px; background-color: orange; border: none; color: white; border-radius: 5px; font-size: 1rem; cursor: pointer;">Close</button>
+        
+        `;
+
+    document.body.appendChild(div);
+
+    // Close the modal on button click
+    const closeProfile = document.getElementById('closeProfile');
+    closeProfile.addEventListener('click', () => {
+        div.remove();
+    });
+});
 let count = 0;
 let totalprice = 0;
 let cartItems = [];

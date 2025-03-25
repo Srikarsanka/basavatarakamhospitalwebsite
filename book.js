@@ -1,4 +1,74 @@
 
+
+
+const name = localStorage.getItem('firstName') || 'User';
+const dob = localStorage.getItem('dob') || 'N/A';
+const email = localStorage.getItem('userEmail') || 'N/A';
+const gender = localStorage.getItem('gender') || 'N/A';
+
+// Check if data is available
+console.log("User Profile Data:", { name, dob, email, gender });
+const profile = document.getElementById('pop')
+// Function to create and display the profile modal
+profile.addEventListener('click', () => {
+    // Remove existing profile modal if it exists
+    const existingModal = document.getElementById('profileModal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Decide the profile image based on gender
+    let profileImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJd42JdHzWNXP6VQQbiNZ3VrzHtDmvYMYQEVEriEi7kCw5Uz06QQtyfQeNoHItvNO0mKQ&usqp=CAU"; // Default image
+    if (gender.toLowerCase() === 'm') {
+        profileImage = "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"; // Male image
+    } else if (gender.toLowerCase() === 'f') {
+        profileImage = "https://cdn-icons-png.flaticon.com/512/2922/2922561.png"; // Female image
+    }
+
+    // Create the profile modal
+    const div = document.createElement('div');
+    div.id = 'profileModal';
+    div.style.width = '25%';
+    div.style.height = '100%';
+    div.style.backgroundColor = 'white';
+    div.style.color = '#0f346c';
+    div.style.position = 'fixed';
+    div.style.top = '0px';
+    div.style.overflowY = 'scroll';
+    div.style.right = '0';
+    div.style.scrollbarWidth = 'none';
+    div.style.msOverflowStyle = 'none';
+    div.style.WebkitOverflowScrolling = 'touch';
+    div.style.zIndex = '90000';
+    div.style.border = '1px solid #ddd';
+    div.style.boxShadow = '0px 4px 6px rgba(0, 0, 0, 0.1)';
+    div.style.borderRadius = '8px';
+    div.style.padding = '10px';
+
+    // Add user information to the modal
+    div.innerHTML = `
+        <h2 style="text-align: center; margin-bottom: 20px;">User Information</h2>
+        <div style="text-align: center; padding: 20px;">
+            <img src="${profileImage}" alt="Profile Image" 
+                 style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #0f346c;">
+        </div>
+        <h2 style='font-size:1.5rem;font-weight:100;margin-left:10%'><strong style='font-weight:800'>Name:</strong> ${name}</h2>
+        <h2 style='font-size:1.5rem;font-weight:100;margin-left:10%'><strong style='font-weight:800'>Date of Birth:</strong> ${dob}</h2>
+        <h2 style='font-size:1.5rem;font-weight:100;margin-left:10%'><strong style='font-weight:800'>Gender:</strong> ${gender}</h2>
+        <h2 style='font-size:1.5rem;font-weight:100;margin-left:10%'><strong style='font-weight:800;font-size:1.7rem'>Email:</strong> ${email}</h2>
+        <button id="closeProfile" style="display: block; margin: 20px auto; padding: 10px 20px; background-color: orange; border: none; color: white; border-radius: 5px; font-size: 1rem; cursor: pointer;">Close</button>
+        
+        `;
+
+    document.body.appendChild(div);
+
+    // Close the modal on button click
+    const closeProfile = document.getElementById('closeProfile');
+    closeProfile.addEventListener('click', () => {
+        div.remove();
+    });
+});
+
 // cart functionality
 let count = 0;
 let totalprice = 0;
@@ -49,26 +119,32 @@ cart.addEventListener('click', showCartModal);
 function showCartModal() {
     const existingModal = document.getElementById('cartModal');
     if (existingModal) existingModal.remove();
+let div = document.createElement('div');
+div.id = 'cartModal';
+div.style.width = '25%';
+div.style.height = '100%';
+div.style.backgroundColor = 'white';
+div.style.color = '#0f346c';
+div.style.position = 'fixed';
+div.style.top = '0px';
+div.style.overflowY = 'scroll';
+div.style.overflowX = 'hidden'; // Prevents side movement
+div.style.right = '0';
+; // Ensures it stays on the right side
+div.style.scrollbarWidth = 'none';
+div.style.border='none';
+div.style.msOverflowStyle = 'none';
+div.style.WebkitOverflowScrolling = 'touch';
+div.style.zIndex = '90000';
+div.style.boxShadow = '0px 4px 6px rgba(0, 0, 0, 0.1)';
+div.style.borderRadius = '8px';
 
-    let div = document.createElement('div');
-    div.id = 'cartModal';
-    div.style.width = '25%';
-    div.style.height = '100%';
-    div.style.overflowY = 'scroll';
-    div.style.backgroundColor = 'white';
-    div.style.color = '#0f346c';
-    div.style.position = 'fixed';
-    div.style.top = '1%';
-    div.style.right = '5px';
-    div.style.padding = '10px';
-    div.style.borderRadius = '10px';
-    div.style.zIndex = '1000';
 
     let cartContent = cartItems.length === 0 
         ? "<p>No items added yet.</p>" 
         : cartItems.map((item, index) => `
             <div style="border-bottom: 1px solid #ddd; padding: 10px; display: flex; align-items: center; justify-content: space-between;">
-                <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;overflow-x:hidden">
                     <img src="${item.image}" alt="Test Image" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #0f346c; margin-right: 10px;">
                     <div>
                         <p><b>${item.name}</b></p>
@@ -80,25 +156,42 @@ function showCartModal() {
         `).join("");
 
     div.innerHTML = `
-        <span id='close' style="margin-left:20rem;cursor:pointer">
+    <br.
+        <span id='close' style="margin-left:20rem;cursor:pointer;background-color:white;">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black">
                 <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
             </svg>
         </span>
         <br>
-        <div id="cartitems" style="width:100%;height:90%;border:1px solid red;overflow-y:scroll; padding: 10px;">
+        <div id="cartitems" style="width:95%;height:90%;;overflow-y:scroll; padding: 10px;  overflow-y: scroll;
+    overflow-x: hidden; /* Prevents horizontal movement */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;;
+   ">
             ${cartContent}
         </div>
-        <div id="total-price" style="color:black; font-size: 16px; font-weight: bold; margin-top: 10px;">
+        <div id="total-price" style="color:orange; font-size: 20px; font-weight:800; margin-top: 10px;;width:100.5%;height:20px;MARGIN-LEFT:15PX;BORDER-TOP:1PX SOLID #DDD">
+             <BR>
             Total Price To Be Paid: ₹${totalprice}
         </div>
-    `;
+        <br>
+        <BR>
+        <button style="color:wheat;background-color:#0f346c;border-radius:4px;border:1px solid wheat;width:60%;height:50px;margin-left:20%;font-size:13px" id='checkout'>Proceed To Check Out</button>
+        <br>
+        <br>
+        `;
 
     document.body.appendChild(div);
 
     document.getElementById('close').addEventListener('click', () => {
         div.remove();
+
     });
+    document.getElementById('checkout').addEventListener('click',()=>
+    {
+        alert("hello");
+    })
 }
 
 // 🟢 Update cart modal
@@ -111,7 +204,9 @@ function updateCartModal() {
                     <img src="${item.image}" alt="Test Image" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #0f346c; margin-right: 10px;">
                     <div>
                         <p><b>${item.name}</b></p>
+                        <div style="background:#0f346c;color:white">
                         <p style="color: orange; font-weight: bold;">Price: ₹${item.price}</p>
+                        </div>
                     </div>
                 </div>
                 <button onclick="removeFromCart(${index})" style="background-color: red; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px;">Remove</button>
